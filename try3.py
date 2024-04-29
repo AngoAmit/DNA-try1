@@ -1,9 +1,9 @@
 import re
 
 def calculate_edit_distance(seq1, seq2):
-    """
+    
     Calculate the edit distance between two sequences seq1 and seq2.
-    """
+
     # Create a matrix to store the distances
     distances = [[0 for _ in range(len(seq2) + 1)] for _ in range(len(seq1) + 1)]
     
@@ -26,9 +26,9 @@ def calculate_edit_distance(seq1, seq2):
     return distances[-1][-1]
 
 def find_most_similar_segment(seq1, seq2):
-    """
+
     Find the segments in seq1 that are most similar to seq2 and calculate the edit distance.
-    """
+    
     min_distance = float('inf')
     similar_segments = []
     # Search for the best match in the middle of seq1
